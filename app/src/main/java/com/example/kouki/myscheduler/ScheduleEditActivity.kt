@@ -22,7 +22,7 @@ class ScheduleEditActivity : AppCompatActivity() {
         setContentView(R.layout.activity_schedule_edit)
         realm = Realm.getDefaultInstance()
 
-        val scheduleId = intent?.getLongExtra("schedule?id", -1L)
+        val scheduleId = intent?.getLongExtra("schedule_id", -1L)
         if (scheduleId != -1L) {
             val schedule = realm.where<Schedule>()
                 .equalTo("id", scheduleId).findFirst()
