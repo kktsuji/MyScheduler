@@ -32,7 +32,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:id="@+id/titleEdit"
@@ -61,13 +60,14 @@
             android:text="保存"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            android:layout_marginLeft="280dp" android:layout_marginStart="280dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
             android:id="@+id/save"/>
     <Button
             android:text="削除"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginRight="16dp" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="280dp" android:layout_marginEnd="280dp"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="16dp" android:id="@+id/delete" android:background="@color/deleteButton"/>
 </android.support.constraint.ConstraintLayout>

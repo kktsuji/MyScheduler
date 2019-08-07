@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.content_main.*
 
 import org.jetbrains.anko.startActivity
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var realm: Realm
 
@@ -28,6 +29,12 @@ class MainActivity : AppCompatActivity() {
             //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
             //    .setAction("Action", null).show()
             startActivity<ScheduleEditActivity>()
+        }
+
+        listView.setOnItemClickListener { parent, view, position, id ->
+            val schedule = parent.getItemAtPosition(position) as Schedule
+            startActivity<ScheduleEditActivity>(
+                "schedule_id" to schedule.id)
         }
     }
 
